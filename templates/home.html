@@ -19,7 +19,7 @@
                 <td>{{ feed.age }}</td>
                 <td>{{ feed.country }}</td>
                 <td>{{ feed.city }}</td>
-                <td><a href="{{ url_for('edit_feed', id = feed.id) }}">Szerkeztés</a></td>
+                <td><a href="{{ url_for('edit_feed', id = feed.id) }}">Szerkesztés</a></td>
                 <td>
                     <form action="{{ url_for('delete_feed', id = feed.id)}}" method="post">
                         <input type="submit" value="Törlés">
@@ -29,6 +29,5 @@
         {% endfor %}
     </table>
     <a href="{{ url_for('create_feed') }}">Hozzáadás</a>
-    
 </body>
 </html>
