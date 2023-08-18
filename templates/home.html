@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hun">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Név</th>
+            <th>Kor</th>
+            <th>Ország</th>
+            <th>város</th>
+        </tr>
+        {% for feed in feeds %}
+            <tr>
+                <td>{{ feed.name }}</td>
+                <td>{{ feed.age }}</td>
+                <td>{{ feed.country }}</td>
+                <td>{{ feed.city }}</td>
+                <td><a href="{{ url_for('edit_feed', id = feed.id) }}">Szerkeztés</a></td>
+                <td>
+                    <form action="{{ url_for('delete_feed', id = feed.id)}}" method="post">
+                        <input type="submit" value="Törlés">
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('create_feed') }}">Hozzáadás</a>
+</body>
+</html>
