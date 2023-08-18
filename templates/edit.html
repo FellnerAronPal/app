@@ -19,10 +19,10 @@
                             </svg>
                         </div>
                         <form action="{{ url_for('edit_feed', id=feed.id) }}" method="post">
-                            <input type="text" name="name" class="form-control my-3 py-2" value="{{ url_for(feed.name) }}" required>
-                            <input type="text" name="age" class="form-control my-3 py-2" value="{{ url_for(feed.age) }}" required>
-                            <input type="text" name="country" class="form-control my-3 py-2" value="{{ url_for(feed.country) }}" required>
-                            <input type="text" name="city" class="form-control my-3 py-2" value="{{ url_for(feed.city) }}" required>
+                            <input type="text" name="name" class="form-control my-3 py-2" value="{{ feed.name }}" required>
+                            <input type="text" name="age" class="form-control my-3 py-2" value="{{ feed.age }}" required>
+                            <input type="text" name="country" class="form-control my-3 py-2" value="{{ feed.country }}" required>
+                            <input type="text" name="city" class="form-control my-3 py-2" value="{{ feed.city }}" required>
                     
                             <div class="text-center mt-3">
                                 <input type="submit" class="btn btn-primary mb-2" value="Save">
