@@ -1,0 +1,5 @@
+# app
+
+**Feladat**
+
+**Python csomag**
