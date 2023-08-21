@@ -10,6 +10,7 @@ Flask-Bcrypt
 Flask-Login
 
 **Külső források**
+
 https://flask.palletsprojects.com/en/2.3.x/
 
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
