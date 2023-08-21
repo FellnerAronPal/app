@@ -13,8 +13,7 @@ https://flask.palletsprojects.com/en/2.3.x/
 
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
-**ChatGTP**
-
+**ChatGTP:**
 ChatGTP a problémák megoldásánál használtam fel.
 
 https://chat.openai.com/c/3900e590-048f-4432-a2c1-f0d8f62d98bf
